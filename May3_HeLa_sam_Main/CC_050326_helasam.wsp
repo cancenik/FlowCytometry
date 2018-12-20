@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <Workspace version="20.0"  modDate="Tue May 03 17:37:14 PDT 2016"  clientTimestamp="1462322234452"  flowJoVersion="10.1r5"  drawRowBorders="1"  drawColumnBorders="1"  curGroup="All Samples"  groupPaneHeight="80"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:gating="http://www.isac-net.org/std/Gating-ML/v2.0/gating"  xmlns:transforms="http://www.isac-net.org/std/Gating-ML/v2.0/transformations"  xmlns:data-type="http://www.isac-net.org/std/Gating-ML/v2.0/datatypes"  xsi:schemaLocation="http://www.isac-net.org/std/Gating-ML/v2.0/gating http://www.isac-net.org/std/Gating-ML/v2.0/gating/Gating-ML.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/transformations http://www.isac-net.org/std/Gating-ML/v2.0/gating/Transformations.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/datatypes http://www.isac-net.org/std/Gating-ML/v2.0/gating/DataTypes.v2.0.xsd "  nonAutoSaveFileName="file:/Users/cancenik/Desktop/Translation_Screen/FlowJo_Data/May3_HeLa_sam_Main/CC_050326_helasam.wsp" >
+   <WindowPosition x="20"  y="22"  width="600"  height="720"  displayed="1"  panelState="" />
+   <TextTraits font="SansSerif"  size="11"  name=""  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+   <Columns>
+     <TColumn width="300" >
+       <Property key="fj.appnode.prop.name" />
+     </TColumn>
+     <TColumn width="141" >
+       <Property key="fj.appnode.prop.statistic" />
+     </TColumn>
+     <TColumn width="140" >
+       <Property key="fj.appnode.prop.ncells" />
+     </TColumn>
+   </Columns>
+   <Matrices/>
+   <Cytometers>
+     <Cytometer name="DIVA"  cyt="Aria"  useFCS3="1"  extraNegs="0"  widthBasis="-100"  linMin="0"  logMin="3"  linMax="262144"  logMax="262144"  linearRescale="1"  logRescale="1"  linFromKW="1"  logFromKW="1"  useGain="0"  useTransform="1"  transformType="BIEX"  manufacturer=""  serialnumber=""  homepage="workspaces-and-samples/flowjo-and-your-cytometer/ws-cytometer-bd/"  icon="bd.PNG" >
+       <LinParams>
+         <Param>time</Param>
+       </LinParams>
+       <LogParams/>
+       <FilterParams/>
+       <TransformStore>
+         <Transforms>
+           <Transforms>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="FSC-H" />
+             </transforms:linear>
+             <transforms:log transforms:offset="1000"  transforms:decades="2.418539922" >
+               <data-type:parameter data-type:name="FITC-A" />
+             </transforms:log>
+             <transforms:log transforms:offset="316.2277660168"  transforms:decades="2.418539922" >
+               <data-type:parameter data-type:name="SSC-H" />
+             </transforms:log>
+             <transforms:log transforms:offset="31622.7766016838"  transforms:decades="1" >
+               <data-type:parameter data-type:name="SSC-W" />
+             </transforms:log>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="FSC-W" />
+             </transforms:linear>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="Pacific Blue-H" />
+             </transforms:biex>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="FITC-H" />
+             </transforms:biex>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="SSC-A" />
+             </transforms:biex>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="APC-H" />
+             </transforms:biex>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="FSC-A" />
+             </transforms:linear>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="Pacific Blue-A" />
+             </transforms:biex>
+             <transforms:log transforms:offset="316.2277660168"  transforms:decades="2.918539922" >
+               <data-type:parameter data-type:name="APC-A" />
+             </transforms:log>
+           </Transforms>
+         </Transforms>
+       </TransformStore>
+     </Cytometer>
+   </Cytometers>
+   <Groups>
+     <GroupNode name="All Samples"  annotation=""  owningGroup="All Samples"  expanded="1"  sortPriority="10"  count="-1" >
+       <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+         <Axis dimension="x"  name=""  label=""  auto="auto" />
+         <Axis dimension="y"  name=""  label=""  auto="auto" />
+         <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+         <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+           <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+         </GraphEnvironment>
+       </Graph>
+       <Group name="All Samples"  live="1"  role="ws.group.dlog.test"  key=""  synchronized="0"  foreground="#000000"  fontStyle="bold" >
+         <Criteria/>
+         <SampleRefs>
+           <SampleRef sampleID="1" />
+           <SampleRef sampleID="2" />
+           <SampleRef sampleID="3" />
+         </SampleRefs>
+         <Keywords/>
+       </Group>
+     </GroupNode>
+     <GroupNode name="Compensation"  annotation=""  owningGroup="Compensation"  expanded="1"  sortPriority="10"  count="-1" >
+       <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+         <Axis dimension="x"  name=""  label=""  auto="auto" />
+         <Axis dimension="y"  name=""  label=""  auto="auto" />
+         <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+         <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+           <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+         </GraphEnvironment>
+       </Graph>
+       <Group name="Compensation"  live="1"  role="ws.group.dlog.compensation"  key=""  synchronized="0"  foreground="#bc1900"  fontStyle="bold" >
+         <Criteria>
+           <Criterion connector="And"  keyword="$FIL"  function="Contains"  value="unstained" />
+           <Criterion connector="Or"  keyword="$FIL"  function="Contains"  value="comp" />
+         </Criteria>
+         <Keywords/>
+       </Group>
+     </GroupNode>
+   </Groups>
+   <SampleList>
+     <Sample>
+       <DataSet uri="https://FACSDATA.Stanford.EDU:8443/ERS/data/o%3DStanford%20University/ou%3DFACS%20Facility/uid%3Dccenik/journal%3DAria/session%3D8493/file%3D1-1.fcs"  sampleID="1" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="-2102"  gain="1" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:biex>
+         <transforms:log transforms:offset="31622.7766016838"  transforms:decades="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:log>
+         <transforms:log transforms:offset="316.2277660168"  transforms:decades="2.418539922" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:log>
+         <transforms:log transforms:offset="1000"  transforms:decades="2.418539922" >
+           <data-type:parameter data-type:name="FITC-A" />
+         </transforms:log>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="FITC-H" />
+         </transforms:biex>
+         <transforms:log transforms:offset="316.2277660168"  transforms:decades="2.918539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:log>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-H" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="Pacific Blue-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="Pacific Blue-H" />
+         </transforms:biex>
+       </Transformations>
+       <Keywords>
+         <Keyword name="$P13V"  value="482" />
+         <Keyword name="$CELLS"  value="197 beads" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="P12BS"  value="-1" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$P13R"  value="262144" />
+         <Keyword name="$P1N"  value="Time" />
+         <Keyword name="$P13N"  value="Pacific Blue-H" />
+         <Keyword name="$ETIM"  value="10:15:03" />
+         <Keyword name="$FIL"  value="34940.fcs" />
+         <Keyword name="$P1G"  value="0.01" />
+         <Keyword name="$P13G"  value="1.0" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P13E"  value="0,0" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P13B"  value="32" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 8.0.1" />
+         <Keyword name="$P12V"  value="482" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="$P12R"  value="262144" />
+         <Keyword name="$P12N"  value="Pacific Blue-A" />
+         <Keyword name="P5DISPLAY"  value="LOG" />
+         <Keyword name="EXPERIMENT NAME"  value="CC_050326_helasam" />
+         <Keyword name="$P12G"  value="1.0" />
+         <Keyword name="$P12E"  value="0,0" />
+         <Keyword name="LASER2NAME"  value="Red" />
+         <Keyword name="$P12B"  value="32" />
+         <Keyword name="CST BEADS LOT ID"  value="53097" />
+         <Keyword name="LASER1ASF"  value="1.2000000476837158" />
+         <Keyword name="$P11V"  value="499" />
+         <Keyword name="$TOT"  value="2340               " />
+         <Keyword name="P12MS"  value="0" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="$P11R"  value="262144" />
+         <Keyword name="EXPORT TIME"  value="02-MAY-2016-10:14:58" />
+         <Keyword name="$P11N"  value="APC-H" />
+         <Keyword name="$PROJ"  value="CC_050326_helasam" />
+         <Keyword name="$P11G"  value="1.0" />
+         <Keyword name="$P11E"  value="0,0" />
+         <Keyword name="$P11B"  value="32" />
+         <Keyword name="LASER2ASF"  value="1.1299999952316284" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="$P10V"  value="499" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="$P10R"  value="262144" />
+         <Keyword name="$EXP"  value="Cenik, Can" />
+         <Keyword name="P6DISPLAY"  value="LOG" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="$P10N"  value="APC-A" />
+         <Keyword name="$ENDDATA"  value="124239" />
+         <Keyword name="$P10G"  value="1.0" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="THRESHOLD"  value="FSC,45000" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="LASER3ASF"  value="1.0" />
+         <Keyword name="P8BS"  value="-1" />
+         <Keyword name="EXPORT USER NAME"  value="ccenik" />
+         <Keyword name="$SRC"  value="197 Beads" />
+         <Keyword name="P3DISPLAY"  value="LIN" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$P9V"  value="552" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="P11BS"  value="-1" />
+         <Keyword name="$P9R"  value="262144" />
+         <Keyword name="$SMNO"  value="1-1" />
+         <Keyword name="$P9N"  value="FITC-H" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$DATE"  value="02-MAY-2016" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P8V"  value="552" />
+         <Keyword name="APPLY COMPENSATION"  value="TRUE" />
+         <Keyword name="P5BS"  value="-1" />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8N"  value="FITC-A" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="LASER3NAME"  value="Violet" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="P13DISPLAY"  value="LOG" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="TUBE NAME"  value="197 beads" />
+         <Keyword name="$P7V"  value="199" />
+         <Keyword name="P11MS"  value="0" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7N"  value="SSC-H" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P6V"  value="199" />
+         <Keyword name="P13BS"  value="-1" />
+         <Keyword name="P2BS"  value="-1" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="P10DISPLAY"  value="LOG" />
+         <Keyword name="FSC ASF"  value="0.97" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="LASER3DELAY"  value="41.59000015258789" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="P9DISPLAY"  value="LOG" />
+         <Keyword name="WINDOW EXTENSION"  value="2.0" />
+         <Keyword name="$P5V"  value="199" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="P7BS"  value="-1" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5N"  value="SSC-A" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="LASER2DELAY"  value="-36.63999938964844" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P4V"  value="356" />
+         <Keyword name="P10BS"  value="-1" />
+         <Keyword name="P13MS"  value="0" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="$SYS"  value="Windows 7 6.1" />
+         <Keyword name="CST BEADS EXPIRED"  value="2" />
+         <Keyword name="P11DISPLAY"  value="LOG" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$PAR"  value="13" />
+         <Keyword name="SPECIMEN NAME"  value="197 Beads" />
+         <Keyword name="$P4N"  value="FSC-H" />
+         <Keyword name="$BTIM"  value="10:50:05" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="LASER1DELAY"  value="0.0" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P3V"  value="356" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="P4BS"  value="-1" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$OP"  value="FACS User" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="PREF GW NAME"  value="delay area scaling" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="P12DISPLAY"  value="LOG" />
+         <Keyword name="$P2V"  value="356" />
+         <Keyword name="$CYT"  value="Aria" />
+         <Keyword name="P9BS"  value="-1" />
+         <Keyword name="P10MS"  value="0" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$BEGINDATA"  value="2560" />
+         <Keyword name="$P2N"  value="FSC-A" />
+         <Keyword name="SPILL"  value="3,FITC-A,APC-A,Pacific Blue-A,1,0,0,0,1,0,0,0,1" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="GUID"  value="2fc216f3-8a0c-48e8-be47-c1361d89cd11" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+         <Keyword name="$P10S"  value="" />
+         <Keyword name="$P11S"  value="" />
+         <Keyword name="$P12S"  value="" />
+         <Keyword name="$P13S"  value="" />
+       </Keywords>
+       <SampleNode name="34940.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="2340"  sampleID="1" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <WindowPosition x="0"  y="0"  width="0"  height="0"  displayed="0"  panelState="" />
+           </GraphEnvironment>
+         </Graph>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="https://FACSDATA.Stanford.EDU:8443/ERS/data/o%3DStanford%20University/ou%3DFACS%20Facility/uid%3Dccenik/journal%3DAria/session%3D8493/file%3D3-3.fcs"  sampleID="3" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="-41"  gain="1" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:biex>
+         <transforms:log transforms:offset="31622.7766016838"  transforms:decades="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:log>
+         <transforms:log transforms:offset="316.2277660168"  transforms:decades="2.418539922" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:log>
+         <transforms:log transforms:offset="1000"  transforms:decades="2.418539922" >
+           <data-type:parameter data-type:name="FITC-A" />
+         </transforms:log>
+         <transforms:log transforms:offset="316.2277660168"  transforms:decades="2.918539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:log>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="Pacific Blue-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="4.8085001191"  gain="1" >
+           <data-type:parameter data-type:name="OPP_mRNA" />
+         </transforms:linear>
+       </Transformations>
+       <DerivedParameters>
+         <DerivedParameter name="OPP_mRNA"  type="algebraic"  formula="&lt;Param name=&quot;FITC-A&quot; /&gt;/&lt;Param name=&quot;APC-A&quot; /&gt;" >
+           <Formula>&lt;Param name=&quot;FITC-A&quot; /&gt;/&lt;Param name=&quot;APC-A&quot; /&gt;</Formula>
+           <Transform>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="4.8085001191"  gain="1" >
+               <data-type:parameter data-type:name="OPP_mRNA" />
+             </transforms:linear>
+           </Transform>
+         </DerivedParameter>
+       </DerivedParameters>
+       <Keywords>
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="$P10V"  value="482" />
+         <Keyword name="$BEGINDATA"  value="2304" />
+         <Keyword name="$P6V"  value="199" />
+         <Keyword name="$P10R"  value="262144" />
+         <Keyword name="SPECIMEN NAME"  value="Specimen_001" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="$P10N"  value="Pacific Blue-A" />
+         <Keyword name="$TOT"  value="50000              " />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="$P10G"  value="1.0" />
+         <Keyword name="APPLY COMPENSATION"  value="TRUE" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="LASER3ASF"  value="1.0" />
+         <Keyword name="P10MS"  value="0" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="$P5V"  value="199" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="TUBE NAME"  value="HeLaSAM" />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="P2BS"  value="-1" />
+         <Keyword name="$ETIM"  value="19:08:25" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$P5N"  value="SSC-A" />
+         <Keyword name="$CELLS"  value="HeLaSAM" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$OP"  value="FACS User" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="SPILL"  value="3,FITC-A,APC-A,Pacific Blue-A,1,0,0,0,1,0,0,0,1" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$SYS"  value="Windows 7 6.1" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="P7BS"  value="-1" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="P5DISPLAY"  value="LOG" />
+         <Keyword name="$P4V"  value="89" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="$PAR"  value="10" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="LASER2ASF"  value="1.1299999952316284" />
+         <Keyword name="$P4N"  value="FSC-H" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="LASER2DELAY"  value="-36.63999938964844" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="P6DISPLAY"  value="LOG" />
+         <Keyword name="$EXP"  value="Cenik, Can" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="P3DISPLAY"  value="LIN" />
+         <Keyword name="$SRC"  value="Specimen_001" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="WINDOW EXTENSION"  value="2.0" />
+         <Keyword name="PREF GW NAME"  value="analysis" />
+         <Keyword name="$P3V"  value="89" />
+         <Keyword name="$PROJ"  value="CC_050326_helasam" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="P8BS"  value="-1" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="EXPERIMENT NAME"  value="CC_050326_helasam" />
+         <Keyword name="EXPORT TIME"  value="02-MAY-2016-19:08:15" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="$P9V"  value="445" />
+         <Keyword name="LASER2NAME"  value="Red" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="EXPORT USER NAME"  value="ccenik" />
+         <Keyword name="$P9R"  value="262144" />
+         <Keyword name="LASER1ASF"  value="1.2000000476837158" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="P9DISPLAY"  value="LOG" />
+         <Keyword name="$P9N"  value="APC-A" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="$DATE"  value="02-MAY-2016" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="$P2V"  value="89" />
+         <Keyword name="P4BS"  value="-1" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="FSC ASF"  value="0.97" />
+         <Keyword name="$P2N"  value="FSC-A" />
+         <Keyword name="$ENDDATA"  value="2002303" />
+         <Keyword name="THRESHOLD"  value="FSC,30000" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="$P8V"  value="440" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="P10DISPLAY"  value="LOG" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="P9BS"  value="-1" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 8.0.1" />
+         <Keyword name="$P8N"  value="FITC-A" />
+         <Keyword name="$CYT"  value="Aria" />
+         <Keyword name="GUID"  value="1162770a-bd2e-48d6-87f7-7eba01c6fe9b" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="LASER3DELAY"  value="41.59000015258789" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="$P1N"  value="Time" />
+         <Keyword name="$BTIM"  value="19:09:06" />
+         <Keyword name="P10BS"  value="-1" />
+         <Keyword name="P5BS"  value="-1" />
+         <Keyword name="$P1G"  value="0.01" />
+         <Keyword name="$P7V"  value="199" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="CST BEADS EXPIRED"  value="2" />
+         <Keyword name="$SMNO"  value="3-3" />
+         <Keyword name="$P7N"  value="SSC-H" />
+         <Keyword name="CST BEADS LOT ID"  value="53097" />
+         <Keyword name="LASER3NAME"  value="Violet" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$FIL"  value="34952.fcs" />
+         <Keyword name="LASER1DELAY"  value="0.0" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+         <Keyword name="$P10S"  value="" />
+       </Keywords>
+       <SampleNode name="34952.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="50000"  sampleID="3" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1" >
+           <Axis dimension="x"  name="OPP_mRNA"  label=""  auto="auto" />
+           <Axis dimension="y"  name=""  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="H"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <WindowPosition x="0"  y="22"  width="657"  height="705"  displayed="0"  panelState="++" />
+           </GraphEnvironment>
+         </Graph>
+         <Subpopulations>
+           <Population name="single_1"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="30377" >
+             <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+               <Axis dimension="x"  name="SSC-H"  label=""  auto="auto" />
+               <Axis dimension="y"  name="SSC-W"  label=""  auto="auto" />
+               <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+               <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                 <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <WindowPosition x="595"  y="22"  width="390"  height="520"  displayed="0"  panelState="---" />
+               </GraphEnvironment>
+             </Graph>
+             <Gate gating:id="ID1405489012" >
+               <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                 <gating:dimension gating:min="119719.30708661418"  gating:max="240470.67716535434" >
+                   <data-type:fcs-dimension data-type:name="FSC-A" />
+                 </gating:dimension>
+                 <gating:dimension gating:min="3959.588378638756"  gating:max="87664.79717692357" >
+                   <data-type:fcs-dimension data-type:name="SSC-A" />
+                 </gating:dimension>
+               </gating:RectangleGate>
+             </Gate>
+             <Subpopulations>
+               <Population name="Single Cells"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="26026" >
+                 <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                   <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+                   <Axis dimension="y"  name="FSC-W"  label=""  auto="auto" />
+                   <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                   <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                     <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <WindowPosition x="695"  y="150"  width="390"  height="520"  displayed="0"  panelState="---" />
+                   </GraphEnvironment>
+                 </Graph>
+                 <Gate gating:id="ID1881191331"  gating:parent_id="ID1405489012" >
+                   <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                     <gating:dimension gating:min="1373.9195964568721"  gating:max="38483.67575900291" >
+                       <data-type:fcs-dimension data-type:name="SSC-H" />
+                     </gating:dimension>
+                     <gating:dimension gating:min="99138.10232584662"  gating:max="168098.52774253648" >
+                       <data-type:fcs-dimension data-type:name="SSC-W" />
+                     </gating:dimension>
+                   </gating:RectangleGate>
+                 </Gate>
+                 <Subpopulations>
+                   <Population name="Single Cells_2"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="22520" >
+                     <Graph smoothing="1"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1" >
+                       <Axis dimension="x"  name="OPP_mRNA"  label=""  auto="auto" />
+                       <Axis dimension="y"  name=""  label=""  auto="auto" />
+                       <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                       <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                         <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                         <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                         <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                         <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                         <WindowPosition x="1034"  y="22"  width="390"  height="520"  displayed="1"  panelState="---" />
+                       </GraphEnvironment>
+                       <WindowPosition x="676"  y="22"  width="390"  height="519" />
+                     </Graph>
+                     <Gate gating:id="ID1928448983"  gating:parent_id="ID1881191331" >
+                       <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                         <gating:dimension gating:min="102174.23622047243"  gating:max="252855.43307086613" >
+                           <data-type:fcs-dimension data-type:name="FSC-A" />
+                         </gating:dimension>
+                         <gating:dimension gating:min="88695.33834586466"  gating:max="146840.06015037594" >
+                           <data-type:fcs-dimension data-type:name="FSC-W" />
+                         </gating:dimension>
+                       </gating:RectangleGate>
+                     </Gate>
+                     <Subpopulations>
+                       <Statistic name="CV"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="APC-A"  ancestor=""  correlate=""  value="42.300552368" />
+                       <Statistic name="CV"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="FITC-A"  ancestor=""  correlate=""  value="38.836639404" />
+                       <Statistic name="CV"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="OPP_mRNA"  ancestor=""  correlate=""  value="41.676280975" />
+                       <Statistic name="Median"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="APC-A"  ancestor=""  correlate=""  value="16115.057617188" />
+                       <Statistic name="Median"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="FITC-A"  ancestor=""  correlate=""  value="17003.044921875" />
+                       <Statistic name="Median"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="OPP_mRNA"  ancestor=""  correlate=""  value="1.083556056" />
+                       <Population name="Q1: APC-A- , FITC-A+"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="1255" >
+                         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                           <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                           <Axis dimension="y"  name="FITC-A"  label=""  auto="auto" />
+                           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <WindowPosition x="676"  y="22"  width="390"  height="519"  displayed="1"  panelState="---" />
+                           </GraphEnvironment>
+                         </Graph>
+                         <Gate gating:id="ID1219995374"  gating:parent_id="ID1928448983" >
+                           <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                             <gating:dimension gating:max="5962.452421706547" >
+                               <data-type:fcs-dimension data-type:name="APC-A" />
+                             </gating:dimension>
+                             <gating:dimension gating:min="1133.8445896235191" >
+                               <data-type:fcs-dimension data-type:name="FITC-A" />
+                             </gating:dimension>
+                           </gating:RectangleGate>
+                         </Gate>
+                       </Population>
+                       <Population name="Q2: APC-A+ , FITC-A+"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="21265" >
+                         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                           <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                           <Axis dimension="y"  name="FITC-A"  label=""  auto="auto" />
+                           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <WindowPosition x="676"  y="22"  width="390"  height="519"  displayed="1"  panelState="---" />
+                           </GraphEnvironment>
+                         </Graph>
+                         <Gate gating:id="ID288389262"  gating:parent_id="ID1928448983" >
+                           <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                             <gating:dimension gating:min="5962.452421706547" >
+                               <data-type:fcs-dimension data-type:name="APC-A" />
+                             </gating:dimension>
+                             <gating:dimension gating:min="1133.8445896235191" >
+                               <data-type:fcs-dimension data-type:name="FITC-A" />
+                             </gating:dimension>
+                           </gating:RectangleGate>
+                         </Gate>
+                         <Subpopulations>
+                           <Statistic name="CV"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="APC-A"  ancestor=""  correlate=""  value="37.899581909" />
+                           <Statistic name="CV"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="FITC-A"  ancestor=""  correlate=""  value="37.548706055" />
+                           <Statistic name="CV"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="OPP_mRNA"  ancestor=""  correlate=""  value="28.422706604" />
+                           <Statistic name="Median"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="APC-A"  ancestor=""  correlate=""  value="16598.06640625" />
+                           <Statistic name="Median"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="FITC-A"  ancestor=""  correlate=""  value="17471.732421875" />
+                           <Statistic name="Median"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="OPP_mRNA"  ancestor=""  correlate=""  value="1.06712079" />
+                         </Subpopulations>
+                       </Population>
+                       <Population name="Q3: APC-A+ , FITC-A-"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="0" >
+                         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                           <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                           <Axis dimension="y"  name="FITC-A"  label=""  auto="auto" />
+                           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <WindowPosition x="676"  y="22"  width="390"  height="519"  displayed="1"  panelState="---" />
+                           </GraphEnvironment>
+                         </Graph>
+                         <Gate gating:id="ID87735155"  gating:parent_id="ID1928448983" >
+                           <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                             <gating:dimension gating:min="7367.963127099062" >
+                               <data-type:fcs-dimension data-type:name="APC-A" />
+                             </gating:dimension>
+                             <gating:dimension gating:max="1133.8445896235191" >
+                               <data-type:fcs-dimension data-type:name="FITC-A" />
+                             </gating:dimension>
+                           </gating:RectangleGate>
+                         </Gate>
+                       </Population>
+                       <Population name="Q4: APC-A- , FITC-A-"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="0" >
+                         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                           <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                           <Axis dimension="y"  name="FITC-A"  label=""  auto="auto" />
+                           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <WindowPosition x="676"  y="22"  width="390"  height="519"  displayed="1"  panelState="---" />
+                           </GraphEnvironment>
+                         </Graph>
+                         <Gate gating:id="ID1390968243"  gating:parent_id="ID1928448983" >
+                           <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                             <gating:dimension gating:max="7367.963127099062" >
+                               <data-type:fcs-dimension data-type:name="APC-A" />
+                             </gating:dimension>
+                             <gating:dimension gating:max="1133.8445896235191" >
+                               <data-type:fcs-dimension data-type:name="FITC-A" />
+                             </gating:dimension>
+                           </gating:RectangleGate>
+                         </Gate>
+                       </Population>
+                     </Subpopulations>
+                   </Population>
+                 </Subpopulations>
+               </Population>
+             </Subpopulations>
+           </Population>
+         </Subpopulations>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="https://FACSDATA.Stanford.EDU:8443/ERS/data/o%3DStanford%20University/ou%3DFACS%20Facility/uid%3Dccenik/journal%3DAria/session%3D8493/file%3D3-2.fcs"  sampleID="2" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="6"  gain="0.0000228882" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:biex>
+         <transforms:log transforms:offset="31622.7766016838"  transforms:decades="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:log>
+         <transforms:log transforms:offset="316.2277660168"  transforms:decades="2.418539922" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:log>
+         <transforms:log transforms:offset="1000"  transforms:decades="2.418539922" >
+           <data-type:parameter data-type:name="FITC-A" />
+         </transforms:log>
+         <transforms:log transforms:offset="316.2277660168"  transforms:decades="2.918539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:log>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144.0000291775"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="Pacific Blue-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="4.8085001191"  gain="1" >
+           <data-type:parameter data-type:name="OPP_mRNA" />
+         </transforms:linear>
+       </Transformations>
+       <DerivedParameters>
+         <DerivedParameter name="OPP_mRNA"  type="algebraic"  formula="&lt;Param name=&quot;FITC-A&quot; /&gt;/&lt;Param name=&quot;APC-A&quot; /&gt;" >
+           <Formula>&lt;Param name=&quot;FITC-A&quot; /&gt;/&lt;Param name=&quot;APC-A&quot; /&gt;</Formula>
+           <Transform>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="4.8085001191"  gain="1" >
+               <data-type:parameter data-type:name="OPP_mRNA" />
+             </transforms:linear>
+           </Transform>
+         </DerivedParameter>
+       </DerivedParameters>
+       <Keywords>
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="$P10V"  value="482" />
+         <Keyword name="$BEGINDATA"  value="2304" />
+         <Keyword name="$P6V"  value="199" />
+         <Keyword name="$P10R"  value="262144" />
+         <Keyword name="SPECIMEN NAME"  value="Specimen_001" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="$P10N"  value="Pacific Blue-A" />
+         <Keyword name="$TOT"  value="10000              " />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="$P10G"  value="1.0" />
+         <Keyword name="APPLY COMPENSATION"  value="TRUE" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="LASER3ASF"  value="1.0" />
+         <Keyword name="P10MS"  value="0" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="$P5V"  value="199" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="TUBE NAME"  value="Ctr_hela" />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="P2BS"  value="-1" />
+         <Keyword name="$ETIM"  value="10:56:57" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$P5N"  value="SSC-A" />
+         <Keyword name="$CELLS"  value="Ctr_hela" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$OP"  value="FACS User" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="SPILL"  value="3,FITC-A,APC-A,Pacific Blue-A,1,0,0,0,1,0,0,0,1" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$SYS"  value="Windows 7 6.1" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="P7BS"  value="-1" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="P5DISPLAY"  value="LOG" />
+         <Keyword name="$P4V"  value="89" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="$PAR"  value="10" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="LASER2ASF"  value="1.1299999952316284" />
+         <Keyword name="$P4N"  value="FSC-H" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="LASER2DELAY"  value="-36.63999938964844" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="P6DISPLAY"  value="LOG" />
+         <Keyword name="$EXP"  value="Cenik, Can" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="P3DISPLAY"  value="LIN" />
+         <Keyword name="$SRC"  value="Specimen_001" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="WINDOW EXTENSION"  value="2.0" />
+         <Keyword name="PREF GW NAME"  value="analysis" />
+         <Keyword name="$P3V"  value="89" />
+         <Keyword name="$PROJ"  value="CC_050326_helasam" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="P8BS"  value="-1" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="EXPERIMENT NAME"  value="CC_050326_helasam" />
+         <Keyword name="EXPORT TIME"  value="02-MAY-2016-10:56:51" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="$P9V"  value="445" />
+         <Keyword name="LASER2NAME"  value="Red" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="EXPORT USER NAME"  value="ccenik" />
+         <Keyword name="$P9R"  value="262144" />
+         <Keyword name="LASER1ASF"  value="1.2000000476837158" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="P9DISPLAY"  value="LOG" />
+         <Keyword name="$P9N"  value="APC-A" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="$DATE"  value="02-MAY-2016" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="$P2V"  value="89" />
+         <Keyword name="P4BS"  value="-1" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="FSC ASF"  value="0.97" />
+         <Keyword name="$P2N"  value="FSC-A" />
+         <Keyword name="$ENDDATA"  value="402303" />
+         <Keyword name="THRESHOLD"  value="FSC,30000" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="$P8V"  value="440" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="P10DISPLAY"  value="LOG" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="P9BS"  value="-1" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 8.0.1" />
+         <Keyword name="$P8N"  value="FITC-A" />
+         <Keyword name="$CYT"  value="Aria" />
+         <Keyword name="GUID"  value="1faab472-05c1-4849-8e14-a346e295c3c5" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="LASER3DELAY"  value="41.59000015258789" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="$P1N"  value="Time" />
+         <Keyword name="$BTIM"  value="10:56:51" />
+         <Keyword name="P10BS"  value="-1" />
+         <Keyword name="P5BS"  value="-1" />
+         <Keyword name="$P1G"  value="0.01" />
+         <Keyword name="$P7V"  value="199" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="CST BEADS EXPIRED"  value="2" />
+         <Keyword name="$SMNO"  value="3-2" />
+         <Keyword name="$P7N"  value="SSC-H" />
+         <Keyword name="CST BEADS LOT ID"  value="53097" />
+         <Keyword name="LASER3NAME"  value="Violet" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$FIL"  value="34950.fcs" />
+         <Keyword name="LASER1DELAY"  value="0.0" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+         <Keyword name="$P10S"  value="" />
+       </Keywords>
+       <SampleNode name="34950.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="10000"  sampleID="2" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1" >
+           <Axis dimension="x"  name="FITC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name=""  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="H"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <WindowPosition x="0"  y="22"  width="657"  height="705"  displayed="0"  panelState="++" />
+           </GraphEnvironment>
+         </Graph>
+         <Subpopulations>
+           <Population name="single_1"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="6894" >
+             <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+               <Axis dimension="x"  name="FITC-A"  label=""  auto="auto" />
+               <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+               <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+               <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                 <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <WindowPosition x="325"  y="22"  width="390"  height="520"  displayed="1"  panelState="---" />
+               </GraphEnvironment>
+             </Graph>
+             <Gate gating:id="ID1618856757" >
+               <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                 <gating:dimension gating:min="119719.30708661418"  gating:max="240470.67716535434" >
+                   <data-type:fcs-dimension data-type:name="FSC-A" />
+                 </gating:dimension>
+                 <gating:dimension gating:min="3959.588378638756"  gating:max="87664.79717692357" >
+                   <data-type:fcs-dimension data-type:name="SSC-A" />
+                 </gating:dimension>
+               </gating:RectangleGate>
+             </Gate>
+             <Subpopulations>
+               <Population name="Single Cells"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="6408" >
+                 <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                   <Axis dimension="x"  name="FITC-A"  label=""  auto="auto" />
+                   <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+                   <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                   <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                     <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <WindowPosition x="595"  y="22"  width="390"  height="520"  displayed="1"  panelState="---" />
+                   </GraphEnvironment>
+                 </Graph>
+                 <Gate gating:id="ID1655191056"  gating:parent_id="ID1618856757" >
+                   <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                     <gating:dimension gating:min="1373.9195964568721"  gating:max="38483.67575900291" >
+                       <data-type:fcs-dimension data-type:name="SSC-H" />
+                     </gating:dimension>
+                     <gating:dimension gating:min="99138.10232584662"  gating:max="168098.52774253648" >
+                       <data-type:fcs-dimension data-type:name="SSC-W" />
+                     </gating:dimension>
+                   </gating:RectangleGate>
+                 </Gate>
+                 <Subpopulations>
+                   <Population name="Single Cells_2"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="5890" >
+                     <Graph smoothing="1"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1" >
+                       <Axis dimension="x"  name="OPP_mRNA"  label=""  auto="auto" />
+                       <Axis dimension="y"  name=""  label=""  auto="auto" />
+                       <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                       <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                         <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                         <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                         <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                         <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                         <WindowPosition x="-39"  y="22"  width="390"  height="520"  displayed="1"  panelState="---" />
+                       </GraphEnvironment>
+                       <WindowPosition x="321"  y="22"  width="390"  height="520" />
+                     </Graph>
+                     <Gate gating:id="ID292914954"  gating:parent_id="ID1655191056" >
+                       <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                         <gating:dimension gating:min="102174.23622047243"  gating:max="252855.43307086613" >
+                           <data-type:fcs-dimension data-type:name="FSC-A" />
+                         </gating:dimension>
+                         <gating:dimension gating:min="88695.33834586466"  gating:max="146840.06015037594" >
+                           <data-type:fcs-dimension data-type:name="FSC-W" />
+                         </gating:dimension>
+                       </gating:RectangleGate>
+                     </Gate>
+                     <Subpopulations>
+                       <Statistic name="CV"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="APC-A"  ancestor=""  value="36.053092957" />
+                       <Statistic name="CV"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="FITC-A"  ancestor=""  value="34.367149353" />
+                       <Statistic name="CV"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="OPP_mRNA"  ancestor=""  value="26.429014206" />
+                       <Statistic name="Median"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="APC-A"  ancestor=""  value="20883.931640625" />
+                       <Statistic name="Median"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="FITC-A"  ancestor=""  value="45070.1796875" />
+                       <Statistic name="Median"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="OPP_mRNA"  ancestor=""  value="2.142459154" />
+                       <ComparisonNode name="Comparison"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  showHistogram="1"  plotDifference="0"  tintSample="1"  tintControls="0"  smooth="1"  mergeControls="0"  includeSampleInMatchRatioControls="0"  keepSameSample="0" >
+                         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Histogram"  fast="1" >
+                           <Axis dimension="x"  name="Time"  label=""  auto="auto" />
+                           <Axis dimension="y"  name="APC-A"  label=""  auto="auto" />
+                           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <WindowPosition x="580"  y="22"  width="700"  height="700"  displayed="0"  panelState="---" />
+                           </GraphEnvironment>
+                           <WindowPosition x="580"  y="22"  width="700"  height="700"  displayed="0"  panelState="---" >
+                             <Graphs/>
+                             <Table sortColumn="SE Dymax %Positive "  sortAscending="1" >
+                               <Column name=""  width="30" />
+                               <Column name="Parameter"  width="93" />
+                               <Column name="SE Dymax %Positive "  width="93" />
+                               <Column name="Overton %Positive "  width="93" />
+                               <Column name="Chi-Squared T(X) "  width="93" />
+                               <Column name="K-S Max Difference "  width="92" />
+                               <Column name="K-S Max at Intensity "  width="93" />
+                               <Column name="K-S Probability "  width="92" />
+                             </Table>
+                           </WindowPosition>
+                         </Graph>
+                         <ControlPopulations>
+                           <NodeReference rootID="3"  path="single_1/Single Cells/Single Cells_2" />
+                         </ControlPopulations>
+                         <Univariate>
+                           <Statistic id="Time"  name="KolmogorovSmirnov"  maxDiff="0.2841"  scale="0.0000"  intervalString="&gt; 99.9%" />
+                           <Statistic id="Time"  name="OvertonPositive"  ens="-39.6936"  overtonPositive="0.0000" />
+                           <Statistic id="Time"  name="ChiSquared"  chiTValue="268.8113"  maxChiT="1658.8724" />
+                           <Statistic id="FSC-A"  name="KolmogorovSmirnov"  maxDiff="0.1509"  scale="150528.0000"  intervalString="&gt; 99.9%" />
+                           <Statistic id="FSC-A"  name="OvertonPositive"  ens="46.9751"  overtonPositive="15.0863" />
+                           <Statistic id="FSC-A"  name="ChiSquared"  chiTValue="52.3521"  maxChiT="1658.8724" />
+                           <Statistic id="FSC-W"  name="KolmogorovSmirnov"  maxDiff="0.1569"  scale="114688.0000"  intervalString="&gt; 99.9%" />
+                           <Statistic id="FSC-W"  name="OvertonPositive"  ens="100.0000"  overtonPositive="0.0089" />
+                           <Statistic id="FSC-W"  name="ChiSquared"  chiTValue="60.3596"  maxChiT="1658.8724" />
+                           <Statistic id="FSC-H"  name="KolmogorovSmirnov"  maxDiff="0.2240"  scale="83968.0000"  intervalString="&gt; 99.9%" />
+                           <Statistic id="FSC-H"  name="OvertonPositive"  ens="59.5363"  overtonPositive="22.4014" />
+                           <Statistic id="FSC-H"  name="ChiSquared"  chiTValue="117.4251"  maxChiT="1658.8724" />
+                           <Statistic id="SSC-A"  name="KolmogorovSmirnov"  maxDiff="0.1957"  scale="10341.0381"  intervalString="&gt; 99.9%" />
+                           <Statistic id="SSC-A"  name="OvertonPositive"  ens="100.0000"  overtonPositive="0.0311" />
+                           <Statistic id="SSC-A"  name="ChiSquared"  chiTValue="82.7549"  maxChiT="1658.8724" />
+                           <Statistic id="SSC-W"  name="KolmogorovSmirnov"  maxDiff="0.0908"  scale="115478.2012"  intervalString="&gt; 99.9%" />
+                           <Statistic id="SSC-W"  name="OvertonPositive"  ens="0.0000"  overtonPositive="0.0000" />
+                           <Statistic id="SSC-W"  name="ChiSquared"  chiTValue="19.1456"  maxChiT="1658.8724" />
+                           <Statistic id="SSC-H"  name="KolmogorovSmirnov"  maxDiff="0.1914"  scale="5962.1368"  intervalString="&gt; 99.9%" />
+                           <Statistic id="SSC-H"  name="OvertonPositive"  ens="9.5561"  overtonPositive="0.0886" />
+                           <Statistic id="SSC-H"  name="ChiSquared"  chiTValue="83.5660"  maxChiT="1658.8724" />
+                           <Statistic id="FITC-A"  name="KolmogorovSmirnov"  maxDiff="0.8254"  scale="28503.8136"  intervalString="&gt; 99.9%" />
+                           <Statistic id="FITC-A"  name="OvertonPositive"  ens="95.2940"  overtonPositive="82.5449" />
+                           <Statistic id="FITC-A"  name="ChiSquared"  chiTValue="1226.4045"  maxChiT="1658.8724" />
+                           <Statistic id="APC-A"  name="KolmogorovSmirnov"  maxDiff="0.2713"  scale="18496.2952"  intervalString="&gt; 99.9%" />
+                           <Statistic id="APC-A"  name="OvertonPositive"  ens="53.1856"  overtonPositive="27.1290" />
+                           <Statistic id="APC-A"  name="ChiSquared"  chiTValue="195.5252"  maxChiT="1658.8724" />
+                           <Statistic id="Pacific Blue-A"  name="KolmogorovSmirnov"  maxDiff="0.0602"  scale="166.2774"  intervalString="&gt; 99.9%" />
+                           <Statistic id="Pacific Blue-A"  name="OvertonPositive"  ens="61.5968"  overtonPositive="6.0191" />
+                           <Statistic id="Pacific Blue-A"  name="ChiSquared"  chiTValue="21.2428"  maxChiT="1658.8724" />
+                         </Univariate>
+                         <Multivariate numBins="300" >
+                           <Parameter name="SSC-W" />
+                         </Multivariate>
+                         <FMeasure/>
+                         <MatchRatio/>
+                         <VMeasure/>
+                         <Graphs>
+                           <Parameter name="SSC-W" />
+                           <Parameter name="SSC-H" />
+                           <Parameter name="FSC-A" />
+                           <Parameter name="APC-A" />
+                           <Parameter name="Pacific Blue-A" />
+                           <Parameter name="FITC-A" />
+                         </Graphs>
+                       </ComparisonNode>
+                       <Population name="Q1: APC-A- , FITC-A+"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="61" >
+                         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                           <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                           <Axis dimension="y"  name="FITC-A"  label=""  auto="auto" />
+                           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <WindowPosition x="676"  y="22"  width="390"  height="519"  displayed="1"  panelState="---" />
+                           </GraphEnvironment>
+                         </Graph>
+                         <Gate gating:id="ID1564504342"  gating:parent_id="ID292914954" >
+                           <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                             <gating:dimension gating:max="5962.452421706547" >
+                               <data-type:fcs-dimension data-type:name="APC-A" />
+                             </gating:dimension>
+                             <gating:dimension gating:min="1133.8445896235191" >
+                               <data-type:fcs-dimension data-type:name="FITC-A" />
+                             </gating:dimension>
+                           </gating:RectangleGate>
+                         </Gate>
+                       </Population>
+                       <Population name="Q2: APC-A+ , FITC-A+"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="5829" >
+                         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                           <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                           <Axis dimension="y"  name="FITC-A"  label=""  auto="auto" />
+                           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <WindowPosition x="676"  y="22"  width="390"  height="519"  displayed="1"  panelState="---" />
+                           </GraphEnvironment>
+                         </Graph>
+                         <Gate gating:id="ID1304895536"  gating:parent_id="ID292914954" >
+                           <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                             <gating:dimension gating:min="5962.452421706547" >
+                               <data-type:fcs-dimension data-type:name="APC-A" />
+                             </gating:dimension>
+                             <gating:dimension gating:min="1133.8445896235191" >
+                               <data-type:fcs-dimension data-type:name="FITC-A" />
+                             </gating:dimension>
+                           </gating:RectangleGate>
+                         </Gate>
+                         <Subpopulations>
+                           <Statistic name="CV"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="APC-A"  ancestor=""  correlate=""  value="35.056022644" />
+                           <Statistic name="CV"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="FITC-A"  ancestor=""  correlate=""  value="33.98009491" />
+                           <Statistic name="CV"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="OPP_mRNA"  ancestor=""  correlate=""  value="24.853225708" />
+                           <Statistic name="Median"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="APC-A"  ancestor=""  correlate=""  value="20986.978515625" />
+                           <Statistic name="Median"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="FITC-A"  ancestor=""  correlate=""  value="45254.38671875" />
+                           <Statistic name="Median"  annotation=""  owningGroup=""  expanded="1"  sortPriority="5"  id="OPP_mRNA"  ancestor=""  correlate=""  value="2.138937473" />
+                         </Subpopulations>
+                       </Population>
+                       <Population name="Q3: APC-A+ , FITC-A-"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="0" >
+                         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                           <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                           <Axis dimension="y"  name="FITC-A"  label=""  auto="auto" />
+                           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <WindowPosition x="676"  y="22"  width="390"  height="519"  displayed="1"  panelState="---" />
+                           </GraphEnvironment>
+                         </Graph>
+                         <Gate gating:id="ID1282132719"  gating:parent_id="ID292914954" >
+                           <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                             <gating:dimension gating:min="7367.963127099062" >
+                               <data-type:fcs-dimension data-type:name="APC-A" />
+                             </gating:dimension>
+                             <gating:dimension gating:max="1133.8445896235191" >
+                               <data-type:fcs-dimension data-type:name="FITC-A" />
+                             </gating:dimension>
+                           </gating:RectangleGate>
+                         </Gate>
+                       </Population>
+                       <Population name="Q4: APC-A- , FITC-A-"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="0" >
+                         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                           <Axis dimension="x"  name="APC-A"  label=""  auto="auto" />
+                           <Axis dimension="y"  name="FITC-A"  label=""  auto="auto" />
+                           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <WindowPosition x="676"  y="22"  width="390"  height="519"  displayed="1"  panelState="---" />
+                           </GraphEnvironment>
+                         </Graph>
+                         <Gate gating:id="ID1076613332"  gating:parent_id="ID292914954" >
+                           <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                             <gating:dimension gating:max="7367.963127099062" >
+                               <data-type:fcs-dimension data-type:name="APC-A" />
+                             </gating:dimension>
+                             <gating:dimension gating:max="1133.8445896235191" >
+                               <data-type:fcs-dimension data-type:name="FITC-A" />
+                             </gating:dimension>
+                           </gating:RectangleGate>
+                         </Gate>
+                       </Population>
+                     </Subpopulations>
+                   </Population>
+                 </Subpopulations>
+               </Population>
+             </Subpopulations>
+           </Population>
+         </Subpopulations>
+       </SampleNode>
+     </Sample>
+   </SampleList>
+   <TableEditor title="FlowJo Tables: CC_050326_helasam.wsp"  current="Table" >
+     <Table name="Table"  outputFile="file:/Users/cancenik/Table"  color="#00ffffff"  isBatch="0"  quickclose="0"  destination="toDisplay"  outputFormat="fj.document.type.table" >
+       <PrintLayout flipPattern0="0"  rows="1"  columns="1"  padding="36"  header=""  footer=""  headerActive="0"  footerActive="0"  scalingMode="fj.print.scale.none"  scaling="1"  orientation="1"  width="612"  height="792"  imageableX="72"  imageableY="72"  imageableWidth="468"  imageableHeight="648" />
+       <PageSection sectionName="header" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&amp;NBSP&amp;NBSP&amp;NBSP&amp;NBSP&lt;IMG SRC=&quot;file:/Applications/FlowJo.app/Contents/Resources/Java/images/test/fj_icon.png&quot;&gt;&lt;/IMG&gt;&lt;br/&gt;FlowJo, LLC&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;top&quot;&gt;Page &lt;PageNumber/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <PageSection sectionName="footer" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;  valign=&quot;bottom&quot;&gt;&lt;LongDate/&gt;&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;bottom&quot;&gt;&lt;Version/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <Iteration iterationType="SAMPLE"  iterationValue="1"  iterationKeyword=""  discriminator=""  panelSize="1"  groupName="workspaceSelection" />
+     </Table>
+   </TableEditor>
+   <LayoutEditor title="FlowJo Layouts: CC_050326_helasam.wsp"  current="Layout"  showGrid="0"  showPageBreaks="0"  showGuides="0"  showDebugOutput="0" >
+     <Layout name="Layout"  outputFile="file:/Users/cancenik/Layout"  color="#00ffffff"  isBatch="0"  showGrid="0"  showRulers="1"  showDebugOutput="0"  showGuides="0"  showPageBreaks="1"  scale="1" >
+       <PrintLayout flipPattern0="0"  rows="1"  columns="1"  padding="36"  header=""  footer=""  headerActive="0"  footerActive="0"  scalingMode="fj.print.scale.none"  scaling="1"  orientation="1"  width="612"  height="792"  imageableX="72"  imageableY="72"  imageableWidth="468"  imageableHeight="648" />
+       <PageSection sectionName="header" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&amp;NBSP&amp;NBSP&amp;NBSP&amp;NBSP&lt;IMG SRC=&quot;file:/Applications/FlowJo.app/Contents/Resources/Java/images/test/fj_icon.png&quot;&gt;&lt;/IMG&gt;&lt;br/&gt;FlowJo, LLC&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;top&quot;&gt;Page &lt;PageNumber/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <PageSection sectionName="footer" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;  valign=&quot;bottom&quot;&gt;&lt;LongDate/&gt;&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;bottom&quot;&gt;&lt;Version/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <Iteration iterationType="OFF"  iterationValue="1"  iterationKeyword=""  discriminator=""  panelSize="1"  groupName="workspaceSelection" />
+       <BatchSettings useCurrentGroup="1"  length="3"  name=""  order="ACROSS"  direction="COLUMNS"  append="0"  destination="toLayout"  separatePages="0"  launchApp="1"  header="0"  footer="0"  commandLineBatch="0" />
+       <FigList/>
+     </Layout>
+     <WindowPosition x="0"  y="22"  width="900"  height="600" />
+   </LayoutEditor>
+   <Scripts>
+     <Script lang="text/javascript"  name="New Script    " />
+   </Scripts>
+   <Experiment>
+     <PlateModel name="Plate"  color="#00ffffff"  rows="8"  columns="12"  plateID="00000"  expID="000-00000"  format="Plate"  showNEntries="1"  peHeatmap="1"  peShowEnums="1"  peThickBorders="1" >
+       <PrintLayout flipPattern0="0"  rows="1"  columns="1"  padding="36"  header=""  footer=""  headerActive="0"  footerActive="0"  scalingMode="fj.print.scale.none"  scaling="1"  orientation="1"  width="612"  height="792"  imageableX="72"  imageableY="72"  imageableWidth="468"  imageableHeight="648" />
+     </PlateModel>
+     <PlateEditorState>
+       <KeywordList>
+         <Keyword attribute="Time point"  value="24hr" />
+         <Keyword attribute="Treatment &quot;Drug A&quot;"  value="10ug/L" />
+         <Keyword attribute="Assay"  value="GFP Reporter" />
+       </KeywordList>
+       <StagingArea>
+         <StagingWell/>
+         <StagingWell/>
+         <StagingWell/>
+         <StagingWell/>
+       </StagingArea>
+     </PlateEditorState>
+   </Experiment>
+   <Exports/>
+   <SOPS/>
+   <NA/>
+ </Workspace>
